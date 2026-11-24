@@ -1,0 +1,31 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/elevation",
+    "query": {
+      "lat": "27.9881",
+      "lon": "86.9250"
+    },
+    "body": null
+  },
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8",
+    "x-request-id": "ff546b0236843591",
+    "x-quota-limit": "2500",
+    "x-quota-used": "221",
+    "x-quota-free-remaining": "2279",
+    "x-quota-reset": "1795564800"
+  },
+  "body": {
+    "status": "ok",
+    "results": [
+      {
+        "lat": 27.9881,
+        "lon": 86.925,
+        "elevation_m": 8627.0,
+        "resolution_m": 463.8
+      }
+    ]
+  }
+}

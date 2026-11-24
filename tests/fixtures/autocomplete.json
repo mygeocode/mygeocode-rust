@@ -1,0 +1,66 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/autocomplete",
+    "query": {
+      "q": "1600 Pennsylvania",
+      "lang": "en"
+    },
+    "body": null
+  },
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8",
+    "x-request-id": "1e69653fa4246813",
+    "x-quota-limit": "2500",
+    "x-quota-used": "205",
+    "x-quota-free-remaining": "2295",
+    "x-quota-reset": "1795564800"
+  },
+  "body": {
+    "status": "ok",
+    "query": "1600 Pennsylvania",
+    "suggestions": [
+      {
+        "text": "1600 Pennsylvania Avenue NW, Washington, DC 20500, United States",
+        "lat": 38.897674,
+        "lon": -77.036549,
+        "type": "address",
+        "precision": "house",
+        "place_id": "M8XGDEgf6kEg9ibC7WpG-Eecw6G89wuYa_WANLhDcMY_0KI9xyt-CudJSLQjHiqjYOgw"
+      },
+      {
+        "text": "1600 Pennsylvania Avenue SE, Washington, DC 20003, United States",
+        "lat": 38.879221,
+        "lon": -76.981979,
+        "type": "address",
+        "precision": "house",
+        "place_id": "kOUUY-yGdoreOTBBbeqKmWIM-UDwnIbhrGsRKLjLJiOzil_7BuBFtI5kTVFhKcYsqAbr"
+      },
+      {
+        "text": "1600 N Pennsylvania St, Denver, CO 80203, United States",
+        "lat": 39.741846,
+        "lon": -104.980944,
+        "type": "address",
+        "precision": "house",
+        "place_id": "oZt6U4vWKx2lqKPsunZaqljdQyMav_JjvVki5P2lt-ibU_VCJw9uoGBACg61yjD3QqT6"
+      },
+      {
+        "text": "1600 S Pennsylvania St, Denver, CO 80210, United States",
+        "lat": 39.687452,
+        "lon": -104.981286,
+        "type": "address",
+        "precision": "house",
+        "place_id": "Dm1c0mql2SZLRbzspSfmRbMEfZ-6AfbvpWoud8oBrO1GGZ_cJm1Mc0gdZne9D5V-Cz8I"
+      },
+      {
+        "text": "1600 N Pennsylvania Ave, Oklahoma City, OK 73107, United States",
+        "lat": 35.484773,
+        "lon": -97.547358,
+        "type": "address",
+        "precision": "house",
+        "place_id": "TF59Z6W2sirzGTYGtVi_We1zYHxiCd_cgf0DDhk"
+      }
+    ]
+  }
+}

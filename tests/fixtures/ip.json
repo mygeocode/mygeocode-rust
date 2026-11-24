@@ -1,0 +1,74 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/ip",
+    "query": {
+      "ip": "8.8.8.8"
+    },
+    "body": null
+  },
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8",
+    "x-request-id": "b0e6ffb3fa779aa2",
+    "x-quota-limit": "2500",
+    "x-quota-used": "206",
+    "x-quota-free-remaining": "2294",
+    "x-quota-reset": "1795564800"
+  },
+  "body": {
+    "status": "ok",
+    "ip": "8.8.8.8",
+    "version": 4,
+    "found": true,
+    "prefix": "8.8.8.0/24",
+    "country": "United States",
+    "country_code": "US",
+    "continent": "North America",
+    "continent_code": "NA",
+    "region": "California",
+    "region_code": "CA",
+    "city": "Mountain View",
+    "postcode": "94043",
+    "lat": 37.386051,
+    "lon": -122.083849,
+    "timezone": "America/Los_Angeles",
+    "utc_offset": "-08:00",
+    "utc_offset_seconds": -28800,
+    "is_eu": false,
+    "asn": 15169,
+    "as_name": "Google LLC",
+    "org": "Google LLC",
+    "usage_type": "Content",
+    "registry": "arin",
+    "allocated": "2000-03-30",
+    "tags": [
+      "a10k",
+      "anycast",
+      "cdn",
+      "icrit",
+      "vpn",
+      "vpsh"
+    ],
+    "is_anycast": true,
+    "is_satellite": false,
+    "is_datacenter": true,
+    "is_proxy": false,
+    "is_vpn_provider": true,
+    "is_tor": false,
+    "crawler": null,
+    "is_private": false,
+    "abuse_email": "network-abuse@google.com",
+    "threat": {
+      "listed": false,
+      "score": 0,
+      "source_count": 0,
+      "categories": [],
+      "is_tor": false,
+      "is_tor_exit": false,
+      "is_bogon": false,
+      "listings": []
+    },
+    "updated_at": "2026-09-18 05:52:52"
+  }
+}

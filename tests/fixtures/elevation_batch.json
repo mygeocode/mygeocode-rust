@@ -1,0 +1,55 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/v1/elevation",
+    "query": {},
+    "body": {
+      "locations": [
+        [
+          48.8584,
+          2.2945
+        ],
+        [
+          40.6892,
+          -74.0445
+        ],
+        [
+          -33.8568,
+          151.2153
+        ]
+      ]
+    }
+  },
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8",
+    "x-request-id": "2d4552398a9e47df",
+    "x-quota-limit": "2500",
+    "x-quota-used": "231",
+    "x-quota-free-remaining": "2269",
+    "x-quota-reset": "1795564800"
+  },
+  "body": {
+    "status": "ok",
+    "results": [
+      {
+        "lat": 48.8584,
+        "lon": 2.2945,
+        "elevation_m": 37.0,
+        "resolution_m": 463.8
+      },
+      {
+        "lat": 40.6892,
+        "lon": -74.0445,
+        "elevation_m": 0.0,
+        "resolution_m": 463.8
+      },
+      {
+        "lat": -33.8568,
+        "lon": 151.2153,
+        "elevation_m": 10.0,
+        "resolution_m": 463.8
+      }
+    ]
+  }
+}

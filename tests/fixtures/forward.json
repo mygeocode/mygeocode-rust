@@ -1,0 +1,169 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/forward",
+    "query": {
+      "q": "Brandenburg Gate, Berlin",
+      "lang": "en"
+    },
+    "body": null
+  },
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8",
+    "x-request-id": "8d06dcbb74932bfa",
+    "x-quota-limit": "2500",
+    "x-quota-used": "202",
+    "x-quota-free-remaining": "2298",
+    "x-quota-reset": "1795564800"
+  },
+  "body": {
+    "status": "ok",
+    "query": "Brandenburg Gate, Berlin",
+    "results": [
+      {
+        "formatted": "Brandenburg Gate, State of Berlin, Germany",
+        "lat": 52.516268,
+        "lon": 13.377692,
+        "type": "poi",
+        "precision": "house",
+        "confidence": 0.84,
+        "place_id": "jT9DvSQ2gMXhXRQ",
+        "components": {
+          "poi": "Brandenburg Gate",
+          "country": "Germany",
+          "country_code": "de",
+          "state": "State of Berlin"
+        },
+        "bounds": {
+          "north": 52.518271,
+          "south": 52.514269,
+          "east": 13.379691,
+          "west": 13.375691
+        },
+        "codes": {
+          "plus_code": "9F4MG98H+G3",
+          "geohash": "u33db2m36vfj",
+          "mgrs": "33UUU8991719698",
+          "maidenhead": "JO62qm53",
+          "dms": {
+            "lat": "52° 30' 58.6\" N",
+            "lon": "13° 22' 39.7\" E"
+          },
+          "mapcode": "DEU 7J.LF",
+          "mapcode_international": "VJMM9.T0MV"
+        }
+      },
+      {
+        "formatted": "Berlin, State of Berlin, Germany",
+        "lat": 52.524371,
+        "lon": 13.410529,
+        "type": "city",
+        "precision": "city",
+        "confidence": 0.5,
+        "place_id": "fF86s6SM0qC7c-g",
+        "components": {
+          "city": "Berlin",
+          "country": "Germany",
+          "country_code": "de",
+          "state": "State of Berlin"
+        },
+        "bounds": {
+          "north": 52.774369,
+          "south": 52.274372,
+          "east": 13.660532,
+          "west": 13.160531
+        },
+        "population": 3426354
+      },
+      {
+        "formatted": "State of Berlin, Germany",
+        "lat": 52.499999,
+        "lon": 13.416669,
+        "type": "region",
+        "precision": "region",
+        "confidence": 0.39,
+        "place_id": "K-9qa7O1ZftvasU",
+        "components": {
+          "country": "Germany",
+          "country_code": "de",
+          "state": "State of Berlin"
+        },
+        "bounds": {
+          "north": 53.170941,
+          "south": 51.829061,
+          "east": 14.518812,
+          "west": 12.314532
+        },
+        "population": 3677472
+      },
+      {
+        "formatted": "Berlin, Schleswig-Holstein, Germany",
+        "lat": 54.403828,
+        "lon": 9.422432,
+        "type": "poi",
+        "precision": "house",
+        "confidence": 0.15,
+        "place_id": "Zv87gXPLuebpg9g",
+        "components": {
+          "poi": "Berlin",
+          "country": "Germany",
+          "country_code": "de",
+          "state": "Schleswig-Holstein"
+        },
+        "bounds": {
+          "north": 54.405832,
+          "south": 54.401828,
+          "east": 9.424428,
+          "west": 9.420429
+        },
+        "codes": {
+          "plus_code": "9F6FCC3C+GX",
+          "geohash": "u1wtqrvjq8de",
+          "mgrs": "32UNF2742128535",
+          "maidenhead": "JO44rj06",
+          "dms": {
+            "lat": "54° 24' 13.8\" N",
+            "lon": "9° 25' 20.8\" E"
+          },
+          "mapcode": "DEU MJCP.QX",
+          "mapcode_international": "WJ9DJ.QK2T"
+        }
+      },
+      {
+        "formatted": "Berlin, Regierungsbezirk Stuttgart, Baden-Wurttemberg, Germany",
+        "lat": 48.700321,
+        "lon": 9.016989,
+        "type": "poi",
+        "precision": "house",
+        "confidence": 0.14,
+        "place_id": "DF4JRPMvlulj_2E",
+        "components": {
+          "poi": "Berlin",
+          "country": "Germany",
+          "country_code": "de",
+          "county": "Regierungsbezirk Stuttgart",
+          "state": "Baden-Wurttemberg"
+        },
+        "bounds": {
+          "north": 48.702319,
+          "south": 48.698321,
+          "east": 9.018988,
+          "west": 9.014989
+        },
+        "codes": {
+          "plus_code": "8FWFP228+4Q",
+          "geohash": "u0wmj1tgzjf6",
+          "mgrs": "32UNU0125094142",
+          "maidenhead": "JN48mq28",
+          "dms": {
+            "lat": "48° 42' 1.2\" N",
+            "lon": "9° 1' 1.2\" E"
+          },
+          "mapcode": "DEU 92.1WZW",
+          "mapcode_international": "VJ93V.7XSQ"
+        }
+      }
+    ]
+  }
+}

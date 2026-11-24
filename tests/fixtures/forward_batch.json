@@ -1,0 +1,351 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/v1/forward",
+    "query": {
+      "lang": "en"
+    },
+    "body": {
+      "queries": [
+        "Brandenburg Gate, Berlin",
+        "Sydney Opera House",
+        "Statue of Liberty, New York"
+      ]
+    }
+  },
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8",
+    "x-request-id": "1452fd915189ec15",
+    "x-quota-limit": "2500",
+    "x-quota-used": "225",
+    "x-quota-free-remaining": "2275",
+    "x-quota-reset": "1795564800"
+  },
+  "body": {
+    "status": "ok",
+    "results": [
+      {
+        "query": "Brandenburg Gate, Berlin",
+        "results": [
+          {
+            "formatted": "Brandenburg Gate, State of Berlin, Germany",
+            "lat": 52.516268,
+            "lon": 13.377692,
+            "type": "poi",
+            "precision": "house",
+            "confidence": 0.84,
+            "place_id": "jT9DvSQ2gMXhXRQ",
+            "components": {
+              "poi": "Brandenburg Gate",
+              "country": "Germany",
+              "country_code": "de",
+              "state": "State of Berlin"
+            },
+            "bounds": {
+              "north": 52.518271,
+              "south": 52.514269,
+              "east": 13.379691,
+              "west": 13.375691
+            },
+            "codes": {
+              "plus_code": "9F4MG98H+G3",
+              "geohash": "u33db2m36vfj",
+              "mgrs": "33UUU8991719698",
+              "maidenhead": "JO62qm53",
+              "dms": {
+                "lat": "52° 30' 58.6\" N",
+                "lon": "13° 22' 39.7\" E"
+              },
+              "mapcode": "DEU 7J.LF",
+              "mapcode_international": "VJMM9.T0MV"
+            }
+          },
+          {
+            "formatted": "Berlin, State of Berlin, Germany",
+            "lat": 52.524371,
+            "lon": 13.410529,
+            "type": "city",
+            "precision": "city",
+            "confidence": 0.5,
+            "place_id": "fF86s6SM0qC7c-g",
+            "components": {
+              "city": "Berlin",
+              "country": "Germany",
+              "country_code": "de",
+              "state": "State of Berlin"
+            },
+            "bounds": {
+              "north": 52.774369,
+              "south": 52.274372,
+              "east": 13.660532,
+              "west": 13.160531
+            },
+            "population": 3426354
+          },
+          {
+            "formatted": "State of Berlin, Germany",
+            "lat": 52.499999,
+            "lon": 13.416669,
+            "type": "region",
+            "precision": "region",
+            "confidence": 0.39,
+            "place_id": "K-9qa7O1ZftvasU",
+            "components": {
+              "country": "Germany",
+              "country_code": "de",
+              "state": "State of Berlin"
+            },
+            "bounds": {
+              "north": 53.170941,
+              "south": 51.829061,
+              "east": 14.518812,
+              "west": 12.314532
+            },
+            "population": 3677472
+          },
+          {
+            "formatted": "Berlin, Schleswig-Holstein, Germany",
+            "lat": 54.403828,
+            "lon": 9.422432,
+            "type": "poi",
+            "precision": "house",
+            "confidence": 0.15,
+            "place_id": "Zv87gXPLuebpg9g",
+            "components": {
+              "poi": "Berlin",
+              "country": "Germany",
+              "country_code": "de",
+              "state": "Schleswig-Holstein"
+            },
+            "bounds": {
+              "north": 54.405832,
+              "south": 54.401828,
+              "east": 9.424428,
+              "west": 9.420429
+            },
+            "codes": {
+              "plus_code": "9F6FCC3C+GX",
+              "geohash": "u1wtqrvjq8de",
+              "mgrs": "32UNF2742128535",
+              "maidenhead": "JO44rj06",
+              "dms": {
+                "lat": "54° 24' 13.8\" N",
+                "lon": "9° 25' 20.8\" E"
+              },
+              "mapcode": "DEU MJCP.QX",
+              "mapcode_international": "WJ9DJ.QK2T"
+            }
+          },
+          {
+            "formatted": "Berlin, Regierungsbezirk Stuttgart, Baden-Wurttemberg, Germany",
+            "lat": 48.700321,
+            "lon": 9.016989,
+            "type": "poi",
+            "precision": "house",
+            "confidence": 0.14,
+            "place_id": "DF4JRPMvlulj_2E",
+            "components": {
+              "poi": "Berlin",
+              "country": "Germany",
+              "country_code": "de",
+              "county": "Regierungsbezirk Stuttgart",
+              "state": "Baden-Wurttemberg"
+            },
+            "bounds": {
+              "north": 48.702319,
+              "south": 48.698321,
+              "east": 9.018988,
+              "west": 9.014989
+            },
+            "codes": {
+              "plus_code": "8FWFP228+4Q",
+              "geohash": "u0wmj1tgzjf6",
+              "mgrs": "32UNU0125094142",
+              "maidenhead": "JN48mq28",
+              "dms": {
+                "lat": "48° 42' 1.2\" N",
+                "lon": "9° 1' 1.2\" E"
+              },
+              "mapcode": "DEU 92.1WZW",
+              "mapcode_international": "VJ93V.7XSQ"
+            }
+          }
+        ]
+      },
+      {
+        "query": "Sydney Opera House",
+        "results": [
+          {
+            "formatted": "Sydney Opera House, Sydney, New South Wales, Australia",
+            "lat": -33.856701,
+            "lon": 151.215018,
+            "type": "poi",
+            "precision": "house",
+            "confidence": 0.72,
+            "place_id": "xv84Nh5zyMTfpfU",
+            "components": {
+              "poi": "Sydney Opera House",
+              "country": "Australia",
+              "country_code": "au",
+              "county": "Sydney",
+              "state": "New South Wales"
+            },
+            "bounds": {
+              "north": -33.854699,
+              "south": -33.858698,
+              "east": 151.217019,
+              "west": 151.213019
+            },
+            "codes": {
+              "plus_code": "4RRH46V8+82",
+              "geohash": "r3gx2ux6mm3z",
+              "mgrs": "56HLH3487452299",
+              "maidenhead": "QF56od54",
+              "dms": {
+                "lat": "33° 51' 24.1\" S",
+                "lon": "151° 12' 54.1\" E"
+              },
+              "mapcode": "AU-NSW JB.ZQ",
+              "mapcode_international": "7XHRC.GZTH"
+            }
+          }
+        ]
+      },
+      {
+        "query": "Statue of Liberty, New York",
+        "results": [
+          {
+            "formatted": "Statue of Liberty, New York, New York, United States",
+            "lat": 40.689278,
+            "lon": -74.044552,
+            "type": "poi",
+            "precision": "house",
+            "confidence": 0.9,
+            "place_id": "TbZ3qf0L2-S3puo",
+            "components": {
+              "poi": "Statue of Liberty",
+              "country": "United States",
+              "country_code": "us",
+              "county": "New York",
+              "state": "New York",
+              "state_code": "NY"
+            },
+            "bounds": {
+              "north": 40.691282,
+              "south": 40.687281,
+              "east": -74.042549,
+              "west": -74.046549
+            },
+            "codes": {
+              "plus_code": "87G7MXQ4+P5",
+              "geohash": "dr5r7p62hzhm",
+              "mgrs": "18TWL8073104703",
+              "maidenhead": "FN20xq45",
+              "dms": {
+                "lat": "40° 41' 21.4\" N",
+                "lon": "74° 2' 40.4\" W"
+              },
+              "mapcode": "US-NJ V6.5P",
+              "mapcode_international": "S93J5.2972"
+            }
+          },
+          {
+            "formatted": "New York, New York, United States",
+            "lat": 40.714269,
+            "lon": -74.005971,
+            "type": "city",
+            "precision": "city",
+            "confidence": 0.5,
+            "place_id": "skZyM62Pru1sogw",
+            "components": {
+              "city": "New York",
+              "country": "United States",
+              "country_code": "us",
+              "state": "New York",
+              "state_code": "NY"
+            },
+            "bounds": {
+              "north": 40.964269,
+              "south": 40.464271,
+              "east": -73.755968,
+              "west": -74.255968
+            },
+            "population": 8804190
+          },
+          {
+            "formatted": "New York, United States",
+            "lat": 43.000349,
+            "lon": -75.499898,
+            "type": "region",
+            "precision": "region",
+            "confidence": 0.29,
+            "place_id": "D3lLI1MKIn2YaWg",
+            "components": {
+              "country": "United States",
+              "country_code": "us",
+              "state": "New York",
+              "state_code": "NY"
+            },
+            "bounds": {
+              "north": 44.952012,
+              "south": 41.048688,
+              "east": -72.831324,
+              "west": -78.168477
+            },
+            "population": 19867248
+          },
+          {
+            "formatted": "York, NE 68467, United States",
+            "lat": 40.868069,
+            "lon": -97.591999,
+            "type": "city",
+            "precision": "city",
+            "confidence": 0.24,
+            "place_id": "M6h56bcUEAwgtWk",
+            "components": {
+              "city": "York",
+              "country": "United States",
+              "country_code": "us",
+              "county": "York County",
+              "state": "Nebraska",
+              "state_code": "NE",
+              "postcode": 68467
+            },
+            "bounds": {
+              "north": 40.898068,
+              "south": 40.838071,
+              "east": -97.561998,
+              "west": -97.622001
+            },
+            "population": 7864
+          },
+          {
+            "formatted": "Clinton, Wisconsin, United States",
+            "lat": 42.557788,
+            "lon": -88.865111,
+            "type": "city",
+            "precision": "city",
+            "confidence": 0.22,
+            "place_id": "hiT7ppJO8SnjmP8",
+            "components": {
+              "city": "Clinton",
+              "country": "United States",
+              "country_code": "us",
+              "county": "Rock County",
+              "state": "Wisconsin",
+              "state_code": "WI"
+            },
+            "bounds": {
+              "north": 42.587788,
+              "south": 42.527788,
+              "east": -88.835108,
+              "west": -88.895109
+            },
+            "population": 2140
+          }
+        ]
+      }
+    ]
+  }
+}

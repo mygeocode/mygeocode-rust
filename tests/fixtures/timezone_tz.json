@@ -1,0 +1,44 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/timezone",
+    "query": {
+      "tz": "Europe/Paris"
+    },
+    "body": null
+  },
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8",
+    "x-request-id": "f29f6f7b9a89c5c5",
+    "x-quota-limit": "2500",
+    "x-quota-used": "217",
+    "x-quota-free-remaining": "2283",
+    "x-quota-reset": "1795564800"
+  },
+  "body": {
+    "status": "ok",
+    "lat": null,
+    "lon": null,
+    "timezone": "Europe/Paris",
+    "name": "Central European Standard Time",
+    "abbreviation": "CET",
+    "utc_offset": "+01:00",
+    "utc_offset_seconds": 3600,
+    "raw_offset_seconds": 3600,
+    "dst": false,
+    "dst_offset_seconds": 0,
+    "timestamp": 1795511235,
+    "local_time": "2026-11-24T10:07:15+01:00",
+    "country_code": "FR",
+    "is_ocean": false,
+    "windows_timezone": "Romance Standard Time",
+    "next_transition": {
+      "timestamp": 1806195600,
+      "utc_offset": "+02:00",
+      "utc_offset_seconds": 7200,
+      "dst": true,
+      "abbreviation": "CEST"
+    }
+  }
+}

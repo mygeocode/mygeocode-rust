@@ -1,0 +1,37 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/postcode",
+    "query": {
+      "code": "10001",
+      "country": "US"
+    },
+    "body": null
+  },
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8",
+    "x-request-id": "f644a8cc3260015c",
+    "x-quota-limit": "2500",
+    "x-quota-used": "222",
+    "x-quota-free-remaining": "2278",
+    "x-quota-reset": "1795564800"
+  },
+  "body": {
+    "status": "ok",
+    "postcode": "10001",
+    "country_code": "US",
+    "results": [
+      {
+        "postcode": "10001",
+        "place": "New York",
+        "region": "New York",
+        "region_code": "NY",
+        "country": "United States",
+        "country_code": "US",
+        "lat": 40.748401,
+        "lon": -73.996702
+      }
+    ]
+  }
+}

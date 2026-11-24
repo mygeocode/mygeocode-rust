@@ -1,0 +1,77 @@
+name: Publish to crates.io
+
+# Runs when a GitHub release is published: the tests on the oldest supported Rust and on stable, then the upload to
+# crates.io through Trusted Publishing (no token is stored anywhere). The release tag must match the version in
+# Cargo.toml, for example v1.1.1. A version that is already on crates.io is left alone.
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - rust: "1.63.0"
+            features: "--no-default-features"
+          - rust: "1.85.0"
+            features: ""
+          - rust: stable
+            features: ""
+          - rust: stable
+            features: "--no-default-features --features native-tls"
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: ${{ matrix.rust }}
+
+      - name: Test on Rust ${{ matrix.rust }} ${{ matrix.features }}
+        env:
+          RUSTFLAGS: "-D warnings"
+        run: cargo test ${{ matrix.features }}
+
+  publish:
+    needs: test
+    runs-on: ubuntu-latest
+    environment:
+      name: crates-io
+      url: https://crates.io/crates/mygeocode
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: stable
+
+      - name: Check that the release tag matches the version in Cargo.toml
+        run: |
+          version="$(cargo metadata --no-deps --format-version 1 | python3 -c 'import json,sys; print(json.load(sys.stdin)["packages"][0]["version"])')"
+          if [ "v${version}" != "${GITHUB_REF_NAME}" ]; then
+            echo "Release tag ${GITHUB_REF_NAME} does not match version ${version}"
+            exit 1
+          fi
+          echo "VERSION=${version}" >> "$GITHUB_ENV"
+
+      - name: Skip a version that is already published
+        run: |
+          if curl -sf -A "mygeocode-rust release workflow" "https://crates.io/api/v1/crates/mygeocode/${VERSION}" > /dev/null; then
+            echo "SKIP=1" >> "$GITHUB_ENV"
+            echo "mygeocode ${VERSION} is already on crates.io, nothing to publish"
+          fi
+
+      - uses: rust-lang/crates-io-auth-action@v1
+        if: env.SKIP != '1'
+        id: auth
+
+      - name: Publish to crates.io
+        if: env.SKIP != '1'
+        env:
+          CARGO_REGISTRY_TOKEN: ${{ steps.auth.outputs.token }}
+        run: cargo publish

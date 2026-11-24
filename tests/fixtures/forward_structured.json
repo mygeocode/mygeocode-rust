@@ -1,0 +1,147 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/forward",
+    "query": {
+      "street": "10 Downing Street",
+      "city": "London",
+      "country": "GB",
+      "lang": "en"
+    },
+    "body": null
+  },
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8",
+    "x-request-id": "45bbd3958613fddc",
+    "x-quota-limit": "2500",
+    "x-quota-used": "203",
+    "x-quota-free-remaining": "2297",
+    "x-quota-reset": "1795564800"
+  },
+  "body": {
+    "status": "ok",
+    "query": "10 Downing Street, London, GB",
+    "results": [
+      {
+        "formatted": "Downing Street, London SW1A, United Kingdom",
+        "lat": 51.503195,
+        "lon": -0.127033,
+        "type": "street",
+        "precision": "street",
+        "confidence": 0.68,
+        "place_id": "3qhSMqQhiQ1AZcJrQwfLrlKBQpZdCZs",
+        "components": {
+          "road": "Downing Street",
+          "postcode": "SW1A",
+          "city": "London",
+          "county": "Greater London",
+          "state": "England",
+          "country": "United Kingdom",
+          "country_code": "gb"
+        },
+        "bounds": {
+          "south": 51.503166,
+          "west": -0.127924,
+          "north": 51.503254,
+          "east": -0.126138
+        },
+        "codes": {
+          "plus_code": "9C3XGV3F+75",
+          "geohash": "gcpuvpg7zgmm",
+          "mgrs": "30UXC9938709698",
+          "maidenhead": "IO91wm40",
+          "dms": {
+            "lat": "51° 30' 11.5\" N",
+            "lon": "0° 7' 37.3\" W"
+          },
+          "mapcode": "GBR HH.MB",
+          "mapcode_international": "VHGQZ.RH60"
+        }
+      },
+      {
+        "formatted": "George Downing Estate, London N16, United Kingdom",
+        "lat": 51.563829,
+        "lon": -0.070786,
+        "type": "street",
+        "precision": "street",
+        "confidence": 0.62,
+        "place_id": "OUz8pJ_vlf3XjWPf2HU8EndIlvv0w0mwNQ",
+        "components": {
+          "road": "George Downing Estate",
+          "city": "London",
+          "state": "Greater London",
+          "postcode": "N16",
+          "country": "United Kingdom",
+          "country_code": "gb"
+        },
+        "bounds": {
+          "north": 51.566832,
+          "south": 51.560829,
+          "east": -0.067788,
+          "west": -0.073786
+        },
+        "codes": {
+          "plus_code": "9C3XHW7H+GM",
+          "geohash": "gcpvq6umnd6j",
+          "mgrs": "30UYC0302016594",
+          "maidenhead": "IO91xn15",
+          "dms": {
+            "lat": "51° 33' 49.8\" N",
+            "lon": "0° 4' 14.8\" W"
+          },
+          "mapcode": "GBR HC.4V2",
+          "mapcode_international": "VHGQM.QYFK"
+        }
+      },
+      {
+        "formatted": "London, England, United Kingdom",
+        "lat": 51.508528,
+        "lon": -0.125739,
+        "type": "city",
+        "precision": "city",
+        "confidence": 0.5,
+        "place_id": "LVssC4ZefC72r-k",
+        "components": {
+          "city": "London",
+          "country": "United Kingdom",
+          "country_code": "gb",
+          "county": "Greater London",
+          "state": "England",
+          "state_code": "ENG"
+        },
+        "bounds": {
+          "north": 51.758528,
+          "south": 51.258532,
+          "east": 0.124259,
+          "west": -0.375741
+        },
+        "population": 8961989
+      },
+      {
+        "formatted": "City of London, England, United Kingdom",
+        "lat": 51.512789,
+        "lon": -0.091838,
+        "type": "city",
+        "precision": "city",
+        "confidence": 0.26,
+        "place_id": "xx2zR-OVdD46vTw",
+        "components": {
+          "city": "City of London",
+          "country": "United Kingdom",
+          "country_code": "gb",
+          "county": "Greater London",
+          "state": "England",
+          "state_code": "ENG"
+        },
+        "bounds": {
+          "north": 51.542789,
+          "south": 51.482789,
+          "east": -0.061841,
+          "west": -0.121841
+        },
+        "population": 8072
+      }
+    ]
+  }
+}

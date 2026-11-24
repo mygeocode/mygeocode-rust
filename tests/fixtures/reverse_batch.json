@@ -1,0 +1,188 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/v1/reverse",
+    "query": {
+      "lang": "en"
+    },
+    "body": {
+      "coords": [
+        [
+          48.8584,
+          2.2945
+        ],
+        [
+          40.6892,
+          -74.0445
+        ],
+        [
+          -33.8568,
+          151.2153
+        ]
+      ]
+    }
+  },
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8",
+    "x-request-id": "cb5a10392e50f7ae",
+    "x-quota-limit": "2500",
+    "x-quota-used": "228",
+    "x-quota-free-remaining": "2272",
+    "x-quota-reset": "1795564800"
+  },
+  "body": {
+    "status": "ok",
+    "results": [
+      {
+        "lat": 48.8584,
+        "lon": 2.2945,
+        "result": {
+          "formatted": "5 Avenue Anatole France, 75007 Paris, France",
+          "lat": 48.858821,
+          "lon": 2.294596,
+          "distance_m": 47,
+          "type": "address",
+          "precision": "house",
+          "confidence": 0.85,
+          "place_id": "uaOpXczzaHCkNCaNUcKLUz6vyUB3_IjkyQ",
+          "components": {
+            "house_number": "5",
+            "road": "Avenue Anatole France",
+            "suburb": "7e arrondissement",
+            "city": "Paris",
+            "postcode": "75007",
+            "country": "France",
+            "country_code": "fr"
+          },
+          "bounds": {
+            "north": 48.859321,
+            "south": 48.858318,
+            "east": 2.295098,
+            "west": 2.294096
+          },
+          "place": {
+            "name": "Buste de Gustave Eiffel par Antoine Bourdelle",
+            "place_id": "J1Av7Pxoh0F86B3TcnEfggah1pcrcQ"
+          },
+          "formatted_place": "Buste de Gustave Eiffel par Antoine Bourdelle, 5 Avenue Anatole France, 75007 Paris, France",
+          "codes": {
+            "plus_code": "8FW4V75V+GR",
+            "geohash": "u09tunqz7bqg",
+            "mgrs": "31UDQ4825912001",
+            "maidenhead": "JN18du56",
+            "dms": {
+              "lat": "48° 51' 31.8\" N",
+              "lon": "2° 17' 40.5\" E"
+            },
+            "mapcode": "FRA 4H.QX",
+            "mapcode_international": "VHPM8.QYF6"
+          }
+        }
+      },
+      {
+        "lat": 40.6892,
+        "lon": -74.0445,
+        "result": {
+          "formatted": "1 Liberty Island, New York, NY 10004, United States",
+          "lat": 40.689921,
+          "lon": -74.045377,
+          "distance_m": 109,
+          "type": "address",
+          "precision": "house",
+          "confidence": 0.95,
+          "place_id": "F7sfgQm11gtVJP4ourYEl_xajGORku63TGoMC743beYl8yUx68MKXEl-XEizDniZQ_Vd",
+          "components": {
+            "house_number": "1",
+            "road": "Liberty Island",
+            "city": "New York",
+            "county": "New York County",
+            "state": "New York",
+            "state_code": "NY",
+            "postcode": "10004",
+            "country": "United States",
+            "country_code": "us"
+          },
+          "bounds": {
+            "north": 40.690421,
+            "south": 40.689421,
+            "east": -74.044877,
+            "west": -74.045877
+          },
+          "parcel": {
+            "id": "6201001000010101",
+            "area_m2": 46670,
+            "bounds": {
+              "south": 40.688755,
+              "west": -74.047614,
+              "north": 40.691041,
+              "east": -74.042576
+            }
+          },
+          "place": {
+            "name": "Statue Cruises Liberty Island Terminal",
+            "category": "pier",
+            "website": "http://www.statuecruises.com",
+            "place_id": "CO37Uvq9ziBppkFT90uWTBxJAjrWcuM"
+          },
+          "formatted_place": "Statue Cruises Liberty Island Terminal, 1 Liberty Island, New York, NY 10004, United States",
+          "codes": {
+            "plus_code": "87G7MXQ3+XR",
+            "geohash": "dr5r7p3gcxj1",
+            "mgrs": "18TWL8066004774",
+            "maidenhead": "FN20xq45",
+            "dms": {
+              "lat": "40° 41' 23.7\" N",
+              "lon": "74° 2' 43.4\" W"
+            },
+            "mapcode": "US-NJ V2.DK",
+            "mapcode_international": "S93J5.18QL"
+          }
+        }
+      },
+      {
+        "lat": -33.8568,
+        "lon": 151.2153,
+        "result": {
+          "formatted": "2B Macquarie Street, Sydney NSW 2000, Australia",
+          "lat": -33.858553,
+          "lon": 151.214267,
+          "distance_m": 217,
+          "type": "address",
+          "precision": "house",
+          "confidence": 0.7,
+          "place_id": "x832jqPQQqUuvzhz7JMp-t1sGABP3c3MvGia8rc",
+          "components": {
+            "house_number": "2B",
+            "road": "Macquarie Street",
+            "city": "Sydney",
+            "county": "Council of the City of Sydney",
+            "state": "New South Wales",
+            "state_code": "NSW",
+            "postcode": "2000",
+            "country": "Australia",
+            "country_code": "au"
+          },
+          "bounds": {
+            "north": -33.858053,
+            "south": -33.859053,
+            "east": 151.214765,
+            "west": 151.213767
+          },
+          "codes": {
+            "plus_code": "4RRH46R7+HP",
+            "geohash": "r3gx2unzeu3b",
+            "mgrs": "56HLH3480852092",
+            "maidenhead": "QF56od53",
+            "dms": {
+              "lat": "33° 51' 30.8\" S",
+              "lon": "151° 12' 51.4\" E"
+            },
+            "mapcode": "AU-NSW JC.SD",
+            "mapcode_international": "7XHRK.G1BC"
+          }
+        }
+      }
+    ]
+  }
+}

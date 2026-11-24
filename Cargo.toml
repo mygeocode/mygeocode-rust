@@ -1,0 +1,31 @@
+[package]
+name = "mygeocode"
+version = "1.1.1"
+edition = "2021"
+rust-version = "1.63"
+authors = ["My Geocode <support@mygeocode.com>"]
+description = "Official Rust client for the My Geocode API: geocoding, reverse geocoding, address autocomplete, IP, timezone, elevation and postal code lookups."
+license = "MIT"
+homepage = "https://www.mygeocode.com/sdks/"
+documentation = "https://docs.rs/mygeocode"
+repository = "https://github.com/mygeocode/mygeocode-rust"
+readme = "README.md"
+keywords = ["geocoding", "reverse-geocoding", "geolocation", "timezone", "elevation"]
+categories = ["api-bindings", "web-programming::http-client"]
+include = ["src/**/*.rs", "tests/**/*", "examples/**/*.rs", "README.md", "LICENSE", "Cargo.toml"]
+
+[features]
+default = ["rustls"]
+# HTTPS through rustls with Mozilla's root certificates built in (pure Rust; ring needs a C compiler to build).
+rustls = ["dep:rustls", "dep:webpki-roots"]
+# HTTPS through the system's TLS library: OpenSSL on Linux, Secure Transport on macOS, SChannel on Windows.
+native-tls = ["dep:native-tls"]
+
+[dependencies]
+rustls = { version = "0.23", default-features = false, features = ["ring", "std", "tls12"], optional = true }
+webpki-roots = { version = "1", optional = true }
+native-tls = { version = "0.2", optional = true }
+
+[package.metadata.docs.rs]
+all-features = false
+features = ["rustls"]

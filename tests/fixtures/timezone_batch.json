@@ -1,0 +1,97 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/timezone",
+    "query": {
+      "locations": "48.8584,2.2945|40.6892,-74.0445|-33.8568,151.2153"
+    },
+    "body": null
+  },
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8",
+    "x-request-id": "b8500c06c7d1d6cf",
+    "x-quota-limit": "2500",
+    "x-quota-used": "220",
+    "x-quota-free-remaining": "2280",
+    "x-quota-reset": "1795564800"
+  },
+  "body": {
+    "status": "ok",
+    "timestamp": 1795511235,
+    "results": [
+      {
+        "lat": 48.8584,
+        "lon": 2.2945,
+        "timezone": "Europe/Paris",
+        "name": "Central European Standard Time",
+        "abbreviation": "CET",
+        "utc_offset": "+01:00",
+        "utc_offset_seconds": 3600,
+        "raw_offset_seconds": 3600,
+        "dst": false,
+        "dst_offset_seconds": 0,
+        "timestamp": 1795511235,
+        "local_time": "2026-11-24T10:07:15+01:00",
+        "country_code": "FR",
+        "is_ocean": false,
+        "windows_timezone": "Romance Standard Time",
+        "next_transition": {
+          "timestamp": 1806195600,
+          "utc_offset": "+02:00",
+          "utc_offset_seconds": 7200,
+          "dst": true,
+          "abbreviation": "CEST"
+        }
+      },
+      {
+        "lat": 40.6892,
+        "lon": -74.0445,
+        "timezone": "America/New_York",
+        "name": "Eastern Standard Time",
+        "abbreviation": "EST",
+        "utc_offset": "-05:00",
+        "utc_offset_seconds": -18000,
+        "raw_offset_seconds": -18000,
+        "dst": false,
+        "dst_offset_seconds": 0,
+        "timestamp": 1795511235,
+        "local_time": "2026-11-24T04:07:15-05:00",
+        "country_code": "US",
+        "is_ocean": false,
+        "windows_timezone": "Eastern Standard Time",
+        "next_transition": {
+          "timestamp": 1805007600,
+          "utc_offset": "-04:00",
+          "utc_offset_seconds": -14400,
+          "dst": true,
+          "abbreviation": "EDT"
+        }
+      },
+      {
+        "lat": -33.8568,
+        "lon": 151.2153,
+        "timezone": "Australia/Sydney",
+        "name": "Australian Eastern Daylight Time",
+        "abbreviation": "AEDT",
+        "utc_offset": "+11:00",
+        "utc_offset_seconds": 39600,
+        "raw_offset_seconds": 36000,
+        "dst": true,
+        "dst_offset_seconds": 3600,
+        "timestamp": 1795511235,
+        "local_time": "2026-11-24T20:07:15+11:00",
+        "country_code": "AU",
+        "is_ocean": false,
+        "windows_timezone": "AUS Eastern Standard Time",
+        "next_transition": {
+          "timestamp": 1806768000,
+          "utc_offset": "+10:00",
+          "utc_offset_seconds": 36000,
+          "dst": false,
+          "abbreviation": "AEST"
+        }
+      }
+    ]
+  }
+}

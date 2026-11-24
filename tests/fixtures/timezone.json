@@ -1,0 +1,39 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/timezone",
+    "query": {
+      "lat": "35.6762",
+      "lon": "139.6503"
+    },
+    "body": null
+  },
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8",
+    "x-request-id": "498226fe0d305e3d",
+    "x-quota-limit": "2500",
+    "x-quota-used": "216",
+    "x-quota-free-remaining": "2284",
+    "x-quota-reset": "1795564800"
+  },
+  "body": {
+    "status": "ok",
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "timezone": "Asia/Tokyo",
+    "name": "Japan Standard Time",
+    "abbreviation": "JST",
+    "utc_offset": "+09:00",
+    "utc_offset_seconds": 32400,
+    "raw_offset_seconds": 32400,
+    "dst": false,
+    "dst_offset_seconds": 0,
+    "timestamp": 1795511235,
+    "local_time": "2026-11-24T18:07:15+09:00",
+    "country_code": "JP",
+    "is_ocean": false,
+    "windows_timezone": "Tokyo Standard Time",
+    "next_transition": null
+  }
+}

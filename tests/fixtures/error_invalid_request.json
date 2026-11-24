@@ -1,0 +1,27 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/forward",
+    "query": {
+      "lang": "en"
+    },
+    "body": null
+  },
+  "status": 400,
+  "headers": {
+    "content-type": "application/json; charset=utf-8",
+    "x-request-id": "6e4f2eb74da933c7",
+    "x-quota-limit": "2500",
+    "x-quota-used": "231",
+    "x-quota-free-remaining": "2269",
+    "x-quota-reset": "1795564800"
+  },
+  "body": {
+    "status": "error",
+    "error": {
+      "code": "invalid_request",
+      "message": "Provide 'q', a structured address (street, city, state, postcode, country) or 'place_id'.",
+      "param": "q"
+    }
+  }
+}
